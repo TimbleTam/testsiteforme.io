@@ -1,0 +1,144 @@
+:root
+{
+    --dark: #374151;
+    --darker: #202630;
+    --darkest: #101318;
+    --light: #EEE;
+    --red: 
+    
+}
+
+@keyframes slide_in_top {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide_in_bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slide_in_left {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Helvetica', 'Lucida Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--dark);
+    color: #FFF;
+}
+
+header
+{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1
+{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: rgb(37, 37, 37);
+    margin-bottom: 1rem;
+    opacity: 0.25;
+    transition: opacity 230ms;
+}
+
+header h1:hover
+{
+    opacity: 1;
+}
+
+#new-task-form {
+
+    display: flex;
+
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input {
+    flex: 0 1 0%;
+    background-color: #101318;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;
+    transition: background-color 0.5s ease-out;
+    transition: flex 0.5s ease-out;
+    animation: 0.75s ease-out 0s 1 slide_in_left;
+}
+
+#new-task-input::placeholder {
+    color: var(--light);
+}
+
+#new-task-input:hover {
+    flex: 1 1 0%;
+    background-color: #202630;
+}
+
+
+
+
+#new-task-submit {
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, pink, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition:  0.4s;
+    animation: 0.75s ease-out 0s 1 slide_in_top;
+    animation-delay: 0.2s;
+}
+
+#new-task-submit:start{
+    opacity: 0;
+}
+
+#new-task-submit:hover {
+    opacity: 0.8;
+}
+
+#new-task-submit:active {
+    opacity: 0.4;
+    font-size: 1rem;
+    background-image: linear-gradient(to right, rgb(201, 45, 45), rgb(247, 247, 247));
+}
+
+
