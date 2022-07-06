@@ -1,11 +1,29 @@
-:root
-{
-    --dark: #374151;
-    --darker: #202630;
-    --darkest: #101318;
-    --light: #EEE;
-    --red: 
+:root {
+    --darkest: #181818;
+    --darker: #424242;
+    --dark: #6d6d6d;
     
+    
+    --grey: #979797;
+    --semilight: #c2c2c2;
+    --light: #ececec;
+
+    --mecute: "me pic 1.jpg";
+    --grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@keyframes background_fade_in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes slide_in_top {
@@ -29,116 +47,337 @@
         transform: translateY(0);
     }
 }
+
 @keyframes slide_in_left {
     0% {
         opacity: 0;
-        transform: translateX(-100%);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); 
     }
     100% {
         opacity: 1;
-        transform: translateX(0);
+        left: 75%;
     }
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Helvetica', 'Lucida Sans', sans-serif;
+@keyframes slide_in_right {
+    0% {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); 
+    }
+    100% {
+        left: 25%;
+    }
 }
 
-body {
+@keyframes app_animation {
+    0% {
+        transform: translateY(90vh);
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Header Control */
+
+body{
+    background-color: var(--darkest);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--dark);
-    color: #FFF;
 }
 
-header
-{
-    padding: 2rem 1rem;
-    max-width: 800px;
+#head{
+    height: 0px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 4rem;
+    margin-left: 10px;
+    color: var(--light);
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 5;
+    font-size: 1.5rem;
+    color: var(--light);
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 5;
+    
+    color: var(--grey);
+}
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 5;
+    
+    color: var(--dark);
+}
+h5 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 5;
+    
+    color: var(--darker);
+}
+
+.my-name {
+    text-align: center;
+    text-shadow: #101318;
+    font-size: 4rem;
+    animation: 0.5s ease-out 0s 1 slide_in_top;
+    transition: font-size 0.3s ease-out;
+}
+.my-name:hover {
+    font-size: 5rem;
+}
+
+
+#side-bar{
+    margin-top: 10rem;
+    height: 100vh;
+    width: 10rem;
+}
+
+.side-button {
+    margin-top: 1rem;
+    text-align: left;
+
+    font-size: 1.5rem;
+    animation: 0.5s ease-out 0s 1 slide_in_left;
+    transition: font-size 0.3s ease-out;
+}
+
+.side-button:hover {
+    font-size: 2rem;
+}
+
+
+
+
+
+#name-title {
+    font-weight: 100;
+    text-align: center;
+    animation: 0.75s ease-in 0s 1 slide_in_top;
+}
+
+
+
+/* Body Control */
+
+
+/* Introduction Page */
+
+@keyframes icon_load_in {
+    0% {
+        max-width: 0vh;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes diss {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.page{
+    background-color: var(--darkest);
+    min-height: 100vh;
+}
+
+
+
+.me-description {
+    max-width: 50vh;
+    left: 75%;
+    top: 50%;
+    font-weight: 1;
+    border-radius: 50%;
+    word-wrap: normal;
+    transform: translate(-50%, -50%); 
+    position: absolute;
+    animation: 1s ease-out slide_in_left;
+}
+
+.me-pic-new {
+    width: 400px;
+    height: 400px;
+    left: 25%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    position: absolute;
+    border-radius: 100%;
+    animation: 1s ease-out slide_in_right;
+}
+
+#me-pic {
+    max-width: 50vh;
+    max-height: 50vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    position: absolute;
+    border-radius: 100%;
+    transition: width 0.5s ease-in-out;
+    animation: icon_load_in 1s ease-out;
+}
+
+#my-story .me-pic {
+    width: 50vh;
+    height: 50vh;
+
+    transform: translate(50%, 0%); 
+    position: absolute;
+    border-radius: 100%;
+}
+
+
+#my-story .text-area {
+    width: 40%;
+    height: 50%;
+
+    transform: translate(130%, 10%); 
+    position: absolute;
+
+}
+
+#my-story .about-me-diagram {
     width: 100%;
-    margin: 0 auto;
-}
+    height: 10%;
 
-header h1
-{
-    font-size: 2.5rem;
-    font-weight: 300;
-    color: rgb(37, 37, 37);
-    margin-bottom: 1rem;
-    opacity: 0.25;
-    transition: opacity 230ms;
-}
-
-header h1:hover
-{
-    opacity: 1;
-}
-
-#new-task-form {
-
-    display: flex;
+    transform: translateY(500%); 
+    position: absolute;
 
 }
 
-input, button{
+.fade{
+    opacity: 0;
+    animation: diss 1s ease-out;
+}
+
+#dia-logo {
+    width: 30px;
+}
+
+#diagram-bot {
+    height: 2px;
+    width: 100%;
+    background-color: var(--darker);
+}
+#diagram-left {
+    height: 100%;
+    width: 2px;
+    background-color: var(--darker);
+    transform: translateY(-100%);
+}
+
+
+#me-pic:hover {
+    width: 400px;
+    height: 400px;
+}
+
+
+#my-story-container {
+    background-color: aqua;
+    width: 45vw;
+    margin-left: 50%;
+    height: 95vh;
+    margin-top: 5%;
+    border-radius: 100%;
+}
+
+
+
+
+
+/* Languages Page */
+
+#language-effect {
+    width: 100%;
+    height: 0%;    
+}
+
+#language-span {
+
+    transform: translateY(-75vh);
+    border-radius: 5%;
+    height: 70vh;
+}
+
+#language-description {
+    margin-left: 0%;
+}
+
+.app-bubble {
+    height: 5vh;
+    opacity: 0;
+    border-radius: 50%;
+    animation: app_animation 2s linear;
+    animation-iteration-count: infinite;
+}
+
+#app-logo1 {
+    animation-delay: 1s;
+    margin-left: 10%;
+}
+#app-logo2 {
+    animation-delay: 2s;
+    margin-left: 20%;
+}
+#app-logo3 {
+    animation-delay: 3s;
+    margin-left: 30%;
+}
+#app-logo4 {
+    animation-delay: 4s;
+    margin-left: 40%;
+}
+
+#app-logo5 {
+    animation-delay: 4s;
+    margin-left: 50%;
+}
+#app-logo6 {
+    animation-delay: 4s;
+    margin-left: 60%;
+}
+#app-logo7 {
+    animation-delay: 4s;
+    margin-left: 70%;
+}
+#app-logo8 {
+    animation-delay: 4s;
+    margin-left: 80%;
+}
+#app-logo9 {
+    animation-delay: 4s;
+    margin-left: 90%;
+}
+
+ 
+input, button {
     appearance: none;
     border: none;
     outline: none;
     background: none;
 }
-
-#new-task-input {
-    flex: 0 1 0%;
-    background-color: #101318;
-    padding: 1rem;
-    border-radius: 0.7rem;
-    margin-right: 1rem;
-    color: var(--light);
-    font-size: 1.25rem;
-    transition: background-color 0.5s ease-out;
-    transition: flex 0.5s ease-out;
-    animation: 0.75s ease-out 0s 1 slide_in_left;
-}
-
-#new-task-input::placeholder {
-    color: var(--light);
-}
-
-#new-task-input:hover {
-    flex: 1 1 0%;
-    background-color: #202630;
-}
-
-
-
-
-#new-task-submit {
-    font-size: 1.25rem;
-    font-weight: 700;
-    background-image: linear-gradient(to right, pink, purple);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-    transition:  0.4s;
-    animation: 0.75s ease-out 0s 1 slide_in_top;
-    animation-delay: 0.2s;
-}
-
-#new-task-submit:start{
-    opacity: 0;
-}
-
-#new-task-submit:hover {
-    opacity: 0.8;
-}
-
-#new-task-submit:active {
-    opacity: 0.4;
-    font-size: 1rem;
-    background-image: linear-gradient(to right, rgb(201, 45, 45), rgb(247, 247, 247));
-}
-
-
