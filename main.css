@@ -180,13 +180,24 @@ margin-left: 2.5%;
 flex-wrap: nowrap
 }
 
-#hello ul {
+#second-line {
     display: flex;
     flex-direction: row;
     padding: 0,0;
     margin-left: 5%;
     flex-wrap: nowrap;
     }
+
+    #third-line {
+        display: flex;
+        flex-direction: row;
+        padding: 0,0;
+        margin-left: 7.5%;
+        flex-wrap: nowrap;
+        top: -10%;
+        }
+        
+    
 
 #introduction h1{
     color: var(--light);
@@ -233,42 +244,39 @@ flex-wrap: nowrap
 }
 
 
-#introduction h3:nth-child(1){
+#hello h3:nth-child(1){
     animation-delay: 2.6s;
 }
-#introduction h3:nth-child(1):hover{
+#hello h3:nth-child(1):hover{
     color: var(--grey);
 }
 
-#introduction h3:nth-child(2){
+#hello h3:nth-child(2){
     animation-delay: 2.8s;
 }
-#introduction h3:nth-child(2):hover{
+#hello h3:nth-child(2):hover{
     color: var(--highlight2);
     font-size: 7vw;
 }
 
-#introduction h3:nth-child(3){
-    animation-delay: 3.0s;
+
+
+#hello h3:nth-child(3){
+    animation-delay: 3.2s;
+
 }
-#introduction h3:nth-child(3):hover{
+#hello h3:nth-child(3):hover{
     color: var(--highlight1);
     font-size: 7vw;
 }
 
-#introduction h3:nth-child(4){
-    animation-delay: 3.2s;
-}
-#introduction h3:nth-child(4):hover{
-    color: var(--grey);
-}
-#introduction h3:nth-child(5){
+#hello h3:nth-child(4){
     animation-delay: 3.4s;
 }
-#introduction h3:nth-child(5):hover{
-    color: var(--highlight1);
-    font-size: 7vw;
+#hello h3:nth-child(4):hover{
+    color: var(--grey);
 }
+
 
 
 
@@ -286,8 +294,6 @@ flex-wrap: nowrap
     transition: all 0.5s;
     overflow-wrap:normal
 }
-
-
 
 
 
@@ -411,7 +417,45 @@ background-color: aqua;
 }
 
 
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
+body {
+    margin: 0px;
+}
+
+#container {
+
+
+    width: 60vw;
+    height: 2vw;
+
+    padding-left: 1vw;
+    filter: url(#threshold) blur(0.6px);
+    animation-delay: 3s;
+    color: var(--light);
+    transition: color 1s;
+
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+
+    font-family: "Roboto Condensed", "Helvetica",sans-serif;
+    font-size: 5vw;
+
+    text-align: left;
+
+    
+
+}
+
+#container:hover {
+    color: var(--highlight1);
+}
 
 
 /* Languages Page */
@@ -440,43 +484,7 @@ background-color: aqua;
     animation-iteration-count: infinite;
 }
 
-#app-logo1 {
-    animation-delay: 1s;
-    margin-left: 10%;
-}
-#app-logo2 {
-    animation-delay: 2s;
-    margin-left: 20%;
-}
-#app-logo3 {
-    animation-delay: 3s;
-    margin-left: 30%;
-}
-#app-logo4 {
-    animation-delay: 4s;
-    margin-left: 40%;
-}
 
-#app-logo5 {
-    animation-delay: 4s;
-    margin-left: 50%;
-}
-#app-logo6 {
-    animation-delay: 4s;
-    margin-left: 60%;
-}
-#app-logo7 {
-    animation-delay: 4s;
-    margin-left: 70%;
-}
-#app-logo8 {
-    animation-delay: 4s;
-    margin-left: 80%;
-}
-#app-logo9 {
-    animation-delay: 4s;
-    margin-left: 90%;
-}
 
  
 input, button {
