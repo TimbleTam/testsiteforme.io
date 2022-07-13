@@ -33,7 +33,7 @@
 body{
 
     background-color: var(--darkest);
-    background-image: linear-gradient(to top,rgba(23, 23, 23, 1), rgba(245, 246, 252, 0)), url("Images/background\ idea.png");
+    background-image: linear-gradient(to top,rgba(23, 23, 23, 1), rgba(245, 246, 252, 0)), url("background idea.png");
     min-height: 100vh;
 }
 

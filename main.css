@@ -93,7 +93,7 @@
 
 .page{
     background-color: var(--darkest);
-    background-image: url("Images/background\ idea.png");
+    background-image: url("background idea.png");
     min-height: 100vh;
     color: var(--light);
 }
@@ -101,7 +101,7 @@
 #introduction{
     background-image:
     linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
-    url("Images/me pic 1.jpg");
+    url("me pic 1.jpg");
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -113,7 +113,7 @@
 #short-about {
     background-image:
     linear-gradient(to bottom,rgba(23, 23, 23, 1), rgba(245, 246, 252, 0)),
-    url("Images/background\ idea.png");
+    url("background idea.png");
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -459,21 +459,6 @@ input, button {
     transform: translateY(-100vh);
 }
 
-#load-in{
-    width: 0vw;
-    height: 100vh;
-    animation: loading_page_in 2s linear;
-    background-image: url("https://www.idownloadblog.com/wp-content/uploads/2020/10/Resonance_Blue_Light-428w-926h@3xiphone.png");
-    background-size: 100vw;
-}
-
-#load-out{
-    width: 100vw;
-    height: 100vh;
-    animation: loading_page_out 2s linear;
-    background-image: url("https://www.idownloadblog.com/wp-content/uploads/2020/10/Resonance_Blue_Light-428w-926h@3xiphone.png");
-    background-size: 100vw;
-}
 
 #contact-button {
     background-color: #979797;

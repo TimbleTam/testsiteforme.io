@@ -10,7 +10,7 @@ function transition_icons(ind)
     software_icon_home.removeChild(software_icon_home.firstChild);
     
     const new_pic = document.createElement('img');
-    new_pic.src = "Images/languages/" + ind + ".png";
+    new_pic.src = ind + ".png";
     new_pic.classList.add("icon-pic-new");
     new_pic.type = "icon-pic-new";
     if(ind < 2)
