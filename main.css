@@ -174,13 +174,13 @@
 display: flex;
 flex-direction: row;
 padding: 0,0;
-margin-left: 5%;
+margin-left: 2.5%;
 }
 #hello ul {
     display: flex;
     flex-direction: row;
     padding: 0,0;
-    margin-left: 10%;
+    margin-left: 5%;
     }
 
 #introduction h1{
@@ -188,6 +188,7 @@ margin-left: 5%;
     font-size: 5vw;
     padding-left: 5px;
     transition: color 0.5s;
+    
 }
 
 #introduction h1:hover{
