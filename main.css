@@ -96,6 +96,7 @@
     background-image: url("background idea.png");
     min-height: 100vh;
     color: var(--light);
+    width: 100%;
 }
 
 #introduction{
