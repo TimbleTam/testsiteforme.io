@@ -173,13 +173,13 @@
 display: flex;
 flex-direction: row;
 padding: 0,0;
-margin-left: 5vw;
+margin-left: 5%;
 }
 #hello ul {
     display: flex;
     flex-direction: row;
     padding: 0,0;
-    margin-left: 10vw;
+    margin-left: 10%;
     }
 
 #introduction h1{
@@ -251,17 +251,17 @@ margin-left: 5vw;
 @keyframes iconslideshow {
     0% {
         opacity: 0;
-        max-width: 240px;
+        max-height: 240px;
         transform: skewY(-40deg);
     }
     25% {
         opacity: 1;
-        max-width: 480px;
+        max-height: 480px;
         transform: skewY(0deg);
     }
     75% {
         opacity: 1;
-        max-width: 480px;
+        max-height: 480px;
         transform: skewY(0deg);
     }
     100% {
@@ -272,7 +272,8 @@ margin-left: 5vw;
 }
 
 .icon-pic-new {
-    max-width: 480px;
+    max-height: 480px;
+    max-width: 80%;
     left: 50%;
     top: 50%;
     border-radius: 50px;
@@ -489,7 +490,6 @@ header {
 header h2 {
     font-size: 3rem;
     color: var(--light);
-    overflow: hidden;
 }
 
 .container{
