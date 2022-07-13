@@ -14,10 +14,14 @@
     --highlight2: rgb(48, 112, 184);
 }
 
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: "Roboto Condensed", "Helvetica",sans-serif;
+    font-family: "Raleway", sans-serif;
+    
+
 }
 
 
@@ -99,17 +103,19 @@
     min-height: 100vh;
     color: var(--light);
     width: 100%;
+    font-weight: 100;
 }
 
 #introduction{
     background-image:
     linear-gradient(to bottom, rgba(109, 109, 109, 0.5), rgba(23, 23, 23, 1)),
     url("me pic 1.jpg");
-    background-size: cover;
+    background-size: 100vmax;
     display: flex;
     flex-direction: row;
     justify-content: left;
     padding-left: 5rem;
+    width: 100vw;
     
 
 }
@@ -124,10 +130,11 @@
     align-items: stretch;
     flex-wrap: wrap;
     align-content: stretch;
+    font-weight: 100;
 }
 .coding-text
 {
-    align-self: stretch;
+    align-self: center;
     max-width: 100%;
     min-width: 50%;
     height: 50%;
@@ -156,20 +163,24 @@
 
 
 .icons-home {
-    align-self: stretch;
+    align-self: center;
     max-width: 480px;
     min-width: 480px;
+    height: 480px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 #hello{
 
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-weight: 900;
+    
 }
 
 #hello li {
@@ -177,7 +188,11 @@ display: flex;
 flex-direction: row;
 padding: 0,0;
 margin-left: 2.5%;
-flex-wrap: nowrap
+flex-wrap: nowrap;
+    align-self: stretch;
+    font-weight: 500;
+
+
 }
 
 #second-line {
@@ -186,6 +201,8 @@ flex-wrap: nowrap
     padding: 0,0;
     margin-left: 5%;
     flex-wrap: nowrap;
+
+    height: min-content;
     }
 
     #third-line {
@@ -194,7 +211,9 @@ flex-wrap: nowrap
         padding: 0,0;
         margin-left: 7.5%;
         flex-wrap: nowrap;
-        top: -10%;
+        align-self: stretch;
+
+
         }
         
     
@@ -205,6 +224,7 @@ flex-wrap: nowrap
     padding-left: 1vw;
     transition: color 0.5s;
     overflow-wrap: unset;
+    
 }
 
 
@@ -305,29 +325,29 @@ flex-wrap: nowrap
 @keyframes iconslideshow {
     0% {
         opacity: 0;
-        max-height: 240px;
-        transform: skewY(-40deg);
+
+        transform: rotate(-360deg);
     }
-    25% {
+    10% {
         opacity: 1;
-        max-height: 480px;
-        transform: skewY(0deg);
+
+        transform: rotate(0deg);
     }
-    75% {
+    90% {
         opacity: 1;
-        max-height: 480px;
-        transform: skewY(0deg);
+
+        transform: rotate(0deg);
     }
     100% {
         opacity: 0;
-        max-width: 240px;
-        transform: skewY(40deg);
+
+        transform: rotate(360deg);
     }
 }
 
 .icon-pic-new {
     max-height: 480px;
-    max-width: 80%;
+    max-width: 480px;
     left: 50%;
     top: 50%;
     border-radius: 50px;
@@ -417,7 +437,7 @@ background-color: aqua;
 }
 
 
-@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
 
 body {
     margin: 0px;
@@ -426,7 +446,7 @@ body {
 #container {
 
 
-    width: 60vw;
+    width: 40vw;
     height: 2vw;
 
     padding-left: 1vw;
@@ -434,6 +454,7 @@ body {
     animation-delay: 3s;
     color: var(--light);
     transition: color 1s;
+
 
 }
 
@@ -444,10 +465,12 @@ body {
     display: inline-block;
 
 
-    font-family: "Roboto Condensed", "Helvetica",sans-serif;
+
     font-size: 5vw;
 
     text-align: left;
+
+    font-weight: 900;
 
     
 
@@ -556,6 +579,7 @@ header h2 {
     flex-direction: row;
     justify-content: space-around;
     z-index: 10000;
+    font-weight: 500;
 }
 
 header::after{

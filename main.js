@@ -13,13 +13,13 @@ function transition_icons(ind)
     new_pic.src = ind + ".png";
     new_pic.classList.add("icon-pic-new");
     new_pic.type = "icon-pic-new";
-    if(ind < 2)
+    if(ind >= 6)
     {
-        ind += 1;
+        ind = 0;
     }
     else
     {
-        ind = 0;
+        ind += 1;
     }
 
     new_pic.addEventListener('animationend', () => {
