@@ -226,28 +226,7 @@ margin-left: 5%;
 
 
 
-@keyframes slide_in_me_pic {
-    0% {
-        
-        top: 50%; 
-    }
-    100% {
-        top: 25%;
-    }
-}
 
-.me-pic-new {
-    max-width: 30vh;
-    max-height: 30vw;
-    left: 50%;
-    top: 25%;
-
-    transform: translate(-50%, -50%); 
-    position: absolute;
-    border-radius: 100%;
-    animation: 1s ease-out slide_in_me_pic;
-
-}
 
 @keyframes iconslideshow {
     0% {
