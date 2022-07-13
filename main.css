@@ -59,10 +59,7 @@
 
 }
 
-.side-togg{
 
-    width: 2.5rem;
-}
 
 
 .side-button {
@@ -96,7 +93,6 @@
 /* Introduction Page */
 
 
-
 .page{
     background-color: var(--darkest);
     background-image: url("background idea.png");
@@ -114,7 +110,7 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-    padding-left: 5rem;
+    
     width: 100vw;
     
 
@@ -131,6 +127,7 @@
     flex-wrap: wrap;
     align-content: stretch;
     font-weight: 100;
+    width: 100vw;
 }
 .coding-text
 {
@@ -164,9 +161,8 @@
 
 .icons-home {
     align-self: center;
-    max-width: 480px;
-    min-width: 480px;
-    height: 480px;
+    width: 50vmin;
+    height: 50vmin;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,6 +176,7 @@
     flex-direction: column;
     justify-content: center;
     font-weight: 900;
+    padding-left: 5rem;
     
 }
 
@@ -346,8 +343,7 @@ flex-wrap: nowrap;
 }
 
 .icon-pic-new {
-    max-height: 480px;
-    max-width: 480px;
+    width: 80%;
     left: 50%;
     top: 50%;
     border-radius: 50px;
@@ -356,26 +352,7 @@ flex-wrap: nowrap;
 
 
 
-#me-pic {
-    max-width: 40vh;
-    max-height: 40vw;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); 
-    position: absolute;
-    border-radius: 100%;
-    transition: max-width 0.5s ease-in-out;
-    animation: icon_load_in 1s ease-out;
-}
 
-#my-story .me-pic {
-    width: 50vh;
-    height: 50vh;
-
-    transform: translate(50%, 0%); 
-    position: absolute;
-    border-radius: 100%;
-}
 
 
 #my-story .text-area {
@@ -446,7 +423,7 @@ body {
 #container {
 
 
-    width: 40vw;
+    width: auto;
     height: 2vw;
 
     padding-left: 1vw;
