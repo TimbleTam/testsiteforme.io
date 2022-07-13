@@ -175,12 +175,15 @@ display: flex;
 flex-direction: row;
 padding: 0,0;
 margin-left: 2.5%;
+flex-wrap: nowrap
 }
+
 #hello ul {
     display: flex;
     flex-direction: row;
     padding: 0,0;
     margin-left: 5%;
+    flex-wrap: nowrap;
     }
 
 #introduction h1{
@@ -188,8 +191,9 @@ margin-left: 2.5%;
     font-size: 5vw;
     padding-left: 5px;
     transition: color 0.5s;
-    
+    overflow-wrap: unset;
 }
+
 
 #introduction h1:hover{
     color: crimson
@@ -198,10 +202,39 @@ margin-left: 2.5%;
 #introduction h2{
     color: var(--light);
     font-size: 5vw;
-    padding-left: 8px;
-    animation-delay: 0.5s;
+    padding-left: 30px;
+
     transition: color 0.5s;
+    overflow-wrap: unset;
 }
+
+#introduction h2:nth-child(1){
+    animation-delay: 1s;
+}
+#introduction h2:nth-child(2){
+    animation-delay: 1.2s;
+}
+#introduction h2:nth-child(3){
+    animation-delay: 1.4s;
+}
+
+#introduction h3:nth-child(1){
+    animation-delay: 2.6s;
+}
+#introduction h3:nth-child(2){
+    animation-delay: 2.8s;
+}
+#introduction h3:nth-child(3){
+    animation-delay: 3.0s;
+}
+#introduction h3:nth-child(4){
+    animation-delay: 3.2s;
+}
+#introduction h3:nth-child(5){
+    animation-delay: 3.4s;
+}
+
+
 
 #introduction h2:hover{
     color: crimson
@@ -211,10 +244,11 @@ margin-left: 2.5%;
 #introduction h3{
     color: var(--light);
     font-size: 5vw;
-    padding-left: 8px;
+    padding-left: 30px;
 
     animation-delay: 1s;
     transition: color 0.5s;
+    overflow-wrap:normal
 }
 
 #introduction h3:hover{
