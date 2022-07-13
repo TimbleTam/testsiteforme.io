@@ -166,7 +166,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    background-color: blueviolet;
 }
 
 #hello{
@@ -177,6 +177,7 @@
     justify-content: center;
     font-weight: 900;
     padding-left: 5rem;
+
     
 }
 
@@ -188,7 +189,7 @@ margin-left: 2.5%;
 flex-wrap: nowrap;
     align-self: stretch;
     font-weight: 500;
-
+    background-color: blueviolet;
 
 }
 
@@ -198,17 +199,22 @@ flex-wrap: nowrap;
     padding: 0,0;
     margin-left: 5%;
     flex-wrap: nowrap;
+    width: 5rem;
+    align-self: stretch;
 
     height: min-content;
+    background-color: blueviolet;
     }
 
     #third-line {
         display: flex;
+        width: auto;
         flex-direction: row;
         padding: 0,0;
         margin-left: 7.5%;
         flex-wrap: nowrap;
         align-self: stretch;
+        background-color: blueviolet;
 
 
         }
