@@ -223,7 +223,7 @@ flex-wrap: nowrap;
 
 #introduction h1{
     color: var(--light);
-    font-size: 5vw;
+    font-size: 5vmax;
     padding-left: 1vw;
     transition: color 0.5s;
     overflow-wrap: unset;
@@ -237,7 +237,7 @@ flex-wrap: nowrap;
 
 #introduction h2{
     color: var(--light);
-    font-size: 5vw;
+    font-size: 5vmax;
     padding-left: 1vw;
 
     transition: all 0.5s;
@@ -263,7 +263,7 @@ flex-wrap: nowrap;
 }
 #introduction h2:nth-child(3):hover{
     color: var(--highlight1);
-    font-size: 7vw;
+
 }
 
 
@@ -278,8 +278,8 @@ flex-wrap: nowrap;
     animation-delay: 2.8s;
 }
 #hello h3:nth-child(2):hover{
-    color: var(--highlight2);
-    font-size: 7vw;
+    color: var(--grey);
+
 }
 
 
@@ -290,7 +290,7 @@ flex-wrap: nowrap;
 }
 #hello h3:nth-child(3):hover{
     color: var(--highlight1);
-    font-size: 7vw;
+
 }
 
 #hello h3:nth-child(4){
@@ -304,13 +304,13 @@ flex-wrap: nowrap;
 
 
 #introduction h2:hover{
-    color: crimson
+    color: var(--highlight1);
 }
 
 
 #introduction h3{
     color: var(--light);
-    font-size: 5vw;
+    font-size: 5vmax;
     padding-left: 1vw;
 
     animation-delay: 1s;
@@ -449,7 +449,7 @@ body {
 
 
 
-    font-size: 5vw;
+    font-size: 5vmax;
 
     text-align: left;
 
