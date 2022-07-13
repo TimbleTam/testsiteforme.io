@@ -94,7 +94,6 @@
 .page{
     background-color: var(--darkest);
     background-image: url("background idea.png");
-    width: auto;
     min-height: 100vh;
     color: var(--light);
     width: 100%;
