@@ -166,7 +166,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: blueviolet;
+
 }
 
 #hello{
@@ -189,7 +189,7 @@ margin-left: 2.5%;
 flex-wrap: nowrap;
     align-self: stretch;
     font-weight: 500;
-    background-color: blueviolet;
+
 
 }
 
@@ -203,7 +203,7 @@ flex-wrap: nowrap;
     align-self: stretch;
 
     height: min-content;
-    background-color: blueviolet;
+
     }
 
     #third-line {
@@ -214,7 +214,7 @@ flex-wrap: nowrap;
         margin-left: 7.5%;
         flex-wrap: nowrap;
         align-self: stretch;
-        background-color: blueviolet;
+
 
 
         }
@@ -371,7 +371,7 @@ flex-wrap: nowrap;
 }
 
 #about-me-page {
-background-color: aqua;
+
 }
 
 #my-story .about-me-diagram {
@@ -411,7 +411,7 @@ background-color: aqua;
 
 
 #my-story-container {
-    background-color: aqua;
+
     width: 45vw;
     margin-left: 50%;
     height: 95vh;
@@ -550,7 +550,7 @@ header {
   }
 
 header h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     color: var(--light);
 }
 
