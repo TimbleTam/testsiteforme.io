@@ -86,7 +86,6 @@
 }
 
 
-
 /* Body Control */
 
 
@@ -161,6 +160,7 @@
     background-image:
     linear-gradient(to bottom,rgba(23, 23, 23, 1), rgba(245, 246, 252, 0)),
     url("background idea.png");
+    animation: background-tile 30s linear infinite;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -175,6 +175,7 @@
     background-image:
     
     url("background idea.png");
+    animation: background-tile 30s linear infinite;
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
@@ -232,7 +233,7 @@
     flex-direction: column;
     justify-content: center;
     font-weight: 900;
-    padding-left: 5rem;
+    padding-left: 2.5vw;
 
     
 }
@@ -358,9 +359,13 @@ flex-wrap: nowrap;
 
 .map {
     background-image: url("UKSilhouette.png");
-    width: 50rem;
-    height: 50rem;
+    width: 50vmin;
+    height: 50vmin;
     background-size: cover;
+
+    align-self: center;
+
+
 
 }
 
@@ -371,12 +376,16 @@ flex-wrap: nowrap;
     top: 77.3333333333%;
     
     border-radius: 50%;
-    border: 8px solid #fff;
+    border: 8px solid var(--light);
     width: 8px;
     height: 8px;
   }
   
   .pin2::after {
+    
+  }
+  .pin2::before
+  {
     position: absolute;
     content: '';
     width: 3px;
@@ -385,8 +394,18 @@ flex-wrap: nowrap;
     
     
     
-    border-top: 20px solid #fff;
+    border-top: 20px solid var(--light);
   }
+
+  .pin2:hover{
+    
+    border: 8px solid var(--highlight1);
+
+  }
+
+  
+
+
 
 
 
@@ -448,48 +467,17 @@ flex-wrap: nowrap;
 
 
 
-#my-story .text-area {
-    width: 40%;
-    height: 50%;
 
-    transform: translate(130%, 10%); 
-    position: absolute;
 
-}
 
-#about-me-page {
 
-}
-
-#my-story .about-me-diagram {
-    width: 100%;
-    height: 10%;
-
-    transform: translateY(500%); 
-    position: absolute;
-
-}
 
 .fade{
     transform: translateX(100vw);
     animation: diss 1s ease-out;
 }
 
-#dia-logo {
-    width: 30px;
-}
 
-#diagram-bot {
-    height: 2px;
-    width: 100%;
-    background-color: var(--darker);
-}
-#diagram-left {
-    height: 100%;
-    width: 2px;
-    background-color: var(--darker);
-    transform: translateY(-100%);
-}
 
 
 #me-pic:hover {
@@ -685,6 +673,7 @@ nav a {
     color: var(--light);
     text-decoration: none;
     text-transform: uppercase;
+
 }
 
 nav a:hover {
@@ -777,3 +766,19 @@ nav a:hover::before{
     75% { width: 100%;}
     100% { width: 0%;}
   }
+
+  
+#contact-me:hover {
+    color: var(--highlight1);
+    font-weight: 900;
+}
+
+@keyframes background-tile {
+    0% {
+        background-position: 0%, 0%;
+    }
+    100% { 
+        background-position: 100%, 100%;
+        
+    }
+}

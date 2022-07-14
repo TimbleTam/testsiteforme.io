@@ -1,5 +1,5 @@
 :root {
-    --darkest: #181818;
+    --darkest: rgb(24, 24, 24);
     --darker: #424242;
     --dark: #6d6d6d;
     --black: #000000;
@@ -12,12 +12,13 @@
     --mecute: "me pic 1.jpg";
     --grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
-
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: "Roboto Condensed", "Helvetica",sans-serif;
-    font-weight: 100;
+    font-family: "Raleway", sans-serif;
+    font-weight: 10;
+
 }
 
 .contact-form {
@@ -29,6 +30,7 @@
     height: 90vh;
     color: var(--light);
     justify-items: stretch;
+
     
 }
 
@@ -36,8 +38,21 @@
 body{
 
     background-color: var(--darkest);
-    background-image: linear-gradient(to top,rgba(23, 23, 23, 1), rgba(245, 246, 252, 0)), url("background idea.png");
+    
     min-height: 100vh;
+    font-weight: 100;
+    
+
+}
+
+@keyframes background-tile {
+    0% {
+        background-position: 0%, 0%;
+    }
+    100% { 
+        background-position: 100%, 100%;
+        
+    }
 }
 
 #name-input {
@@ -141,7 +156,7 @@ header h2 {
 }
 
 .container{
-    font-family: "Roboto Condensed", "Helvetica",sans-serif;
+
     width: 90%;
     margin: 0 auto;
     display: flex;
@@ -210,10 +225,18 @@ nav a:hover::before{
     justify-content: center;
     height: 100vh;
     width: 100vw;
+
+    background-color: var(--darkest);
+    background-image: linear-gradient(to top,rgba(24, 24, 24, 1), rgba(245, 246, 252, 0)), url("background idea.png");
+    min-height: 100vh;
+    
+    animation: background-tile 30s linear infinite;
 }
 #ports-are-pretty h1 {
     font-size: 5vmax;
     color: var(--light);
+    
+
 }
 #ports-are-pretty p {
     font-size: 2vmax;
@@ -224,17 +247,18 @@ nav a:hover::before{
 #ports-are-pretty h1:nth-child(1){
     padding-left: 2vmax;
     animation-duration: 1s;
+    font-weight:100;
     
 }
 #ports-are-pretty h1:nth-child(2){
     padding-left: 4vmax;    
-    width: 37vmax;
+    width: 42vmax;
         animation: typing 2s steps(17), blink .5s step-end infinite alternate;
         white-space: nowrap;
         overflow: hidden;
         border-right: 3px solid;
 
-        
+        font-weight:lighter;
         font-size: 5vmax;
       }
       
