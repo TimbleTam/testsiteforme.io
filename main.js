@@ -36,15 +36,23 @@ const elts = {
 };
 
 const texts = [
-    "Code",
+    
     "Games",
-    "Algo",
-    "Front End",
-    "Scripts",
-    "Models",
-    "Data Structures",
-    "Music",
+    
     "Stories",
+    "Models",
+    "Music",
+    "Code",
+    "Scripts",
+    "UX",
+    
+    
+    
+    "Data Structures",
+    "Algo",
+    
+    
+    "People Happy",
 
 ];
 
