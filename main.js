@@ -41,13 +41,11 @@ const texts = [
     
     "Stories",
     "Models",
-    "Music",
-    "Code",
+
+    
     "Scripts",
+    "Code",
     "UX",
-    
-    
-    
     "Data Structures",
     "Algo",
     
