@@ -27,7 +27,7 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     padding-top: 10vh;
     width: 80vw;
     height: 90vh;
@@ -54,6 +54,7 @@ body {
     height: 3rem;
     font-size: 1rem;
     justify-items: stretch;
+
     background-color: var(--darker);
     border-radius: 10px;
     color: var(--semilight);
@@ -62,6 +63,7 @@ body {
 #email-input {
     height: 3rem;
     font-size: 1rem;
+    margin-top: 2.5vh;
     background-color: var(--darker);
     border-radius: 10px;
     color: var(--semilight);
@@ -78,6 +80,7 @@ body {
     font-size: 1rem;
     max-width: 80vh;
     resize: none;
+    margin-top: 2.5vh;
     background-color: var(--darker);
     border-radius: 10px;
     color: var(--semilight);
@@ -93,6 +96,7 @@ body {
     height: 5rem;
     font-size: 3vmax;
     width: 15vmax;
+    margin-top: 2.5vh;
     resize: none;
     background-color: var(--darker);
     border-radius: 10px;
