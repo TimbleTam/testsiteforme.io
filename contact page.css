@@ -1,18 +1,14 @@
 :root {
-    --darkest: rgb(24, 24, 24);
+    --darkest: rgba(23, 23, 23, 1);
     --darker: #424242;
-    --dark: #6d6d6d;
-    --black: #000000;
+    --dark: rgb(109, 109, 109);
     --grey: #979797;
     --semilight: #c2c2c2;
     --light: #ececec;
     --mecute: "me pic 1.jpg";
-    --grad: linear-gradient(
-        90deg,
-        rgba(2, 0, 36, 1) 0%,
-        rgba(9, 9, 121, 1) 35%,
-        rgba(0, 212, 255, 1) 100%
-    );
+    --grad: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    --highlight1: rgb(184, 48, 48);
+    --highlight2: rgb(48, 112, 184);
 }
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
@@ -21,7 +17,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: "Raleway", sans-serif;
-    font-weight: 10;
+    font-weight: 100;
 }
 
 .contact-form {
@@ -29,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     padding-top: 10vh;
+    margin-left: 10vmin;
     width: 80vw;
     height: 90vh;
     color: var(--light);
@@ -38,7 +35,7 @@
 body {
     background-color: var(--darkest);
     min-height: 100vh;
-    font-weight: 100;
+    
 }
 
 @keyframes background-tile {
@@ -127,23 +124,27 @@ body {
         url("background idea.png");
     min-height: 100vh;
     animation: background-tile 30s linear infinite;
+    font-weight: 900;
 }
 
 #ports-are-pretty h1 {
     font-size: 5vmax;
     color: var(--light);
+    font-weight: 900;
+
 }
 
 #ports-are-pretty p {
     font-size: 2vmax;
     color: var(--grey);
     opacity: 0.2;
+    font-weight: 900;
 }
 
 #ports-are-pretty h1:nth-child(1) {
     padding-left: 2vmax;
     animation-duration: 1s;
-    font-weight: 100;
+    
 }
 
 #ports-are-pretty h1:nth-child(2) {
@@ -153,7 +154,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
-    font-weight: lighter;
+    font-weight: 400;
     font-size: 5vmax;
 }
 

@@ -13,11 +13,42 @@
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     font-family: "Raleway", sans-serif;
 }
+
+@keyframes iconslideshow2 {
+    0% {
+        opacity: 0;
+        transform: rotate(-360deg);
+    }
+    10% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    90% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(360deg);
+    }
+}
+
+.icon-pic-new {
+    
+   
+    max-width: 50vmin;
+    max-height: 50vmin;
+    border-radius: 50px;
+    animation: 2s ease-in-out iconslideshow2;
+}
+
 
 .page {
     background-color: var(--darkest);
@@ -48,13 +79,39 @@
 
 #unity-page img {
     border-radius: 100%;
-    width: 50vmin;
-    height: 50vmin;
+    max-width: 50vmin;
+    max-height: 50vmin;
     bottom: 50%;
-    transform: translateY(-50%);
+    opacity: 0;
 }
 
 #unity-page div {
+
+}
+
+#more-page {
+    background-image:
+    linear-gradient(to bottom,rgba(23, 23, 23, 1), rgba(245, 246, 252, 0)),
+    url("background idea.png");
+    animation: background-tile 30s linear infinite;
+
+    min-height: 100vh;
+    color: var(--light);
+    width: 100%;
+    font-weight: 100;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+}
+
+.skill-image-container {
+
+
+    height: 50vmin;
+    width: 50vmin;
+    transform: translateY(-50%);
 
 }
 
@@ -77,10 +134,10 @@
 
 #blend-page img {
 
-    width: 50vmin;
-    height: 50vmin;
+    max-width: 50vmin;
+    max-height: 50vmin;
     bottom: 50%;
-    transform: translateY(-50%);
+    opacity: 0;
 }
 
 #blend-page div {
@@ -107,10 +164,10 @@
 
 #sharp-page img {
 
-    width: 50vmin;
-    height: 50vmin;
+    max-width: 50vmin;
+    max-height: 50vmin;
     bottom: 50%;
-    transform: translateY(-50%);
+    opacity: 0;
 }
 
 #sharp-page div {
@@ -134,62 +191,106 @@
     flex-wrap: wrap-reverse;
 }
 
-#html-page img {
+#html-page img:nth-child(1) {
 
-    width: 50vmin;
-    height: 50vmin;
-    bottom: 50%;
-    transform: translateY(-50%), rotate(0deg);
-    animation: html-icon-switcher 6s infinite;
+    max-width: 25vmin;
+    max-height: 25vmin;
+    top: 0%;
+    left: 0%;
+    position:fixed;
+    border-radius: 10%;
+    animation-delay: 0.25s;
+
+    animation: rotate-around 8s infinite linear;
 }
+
+#html-page img:nth-child(2) {
+
+    max-width: 25vmin;
+    max-height: 25vmin;
+    top: 0%;
+    left: 50%;
+    position: fixed;
+    animation: rotate-around 8s infinite linear;
+
+}
+
+
+#html-page img:nth-child(3) {
+
+    max-width: 25vmin;
+    max-height: 25vmin;
+    top: 50%;
+    left: 0%;
+    position: fixed;
+    
+    animation: rotate-around 8s infinite linear;
+}
+#html-page img:nth-child(4) {
+
+    max-width: 25vmin;
+    max-height: 25vmin;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    
+    animation: rotate-around 8s infinite linear;
+}
+
+@keyframes rotate-around {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(-360deg);
+        
+    }
+}
+
+.react-container {
+
+width: 50vmin;
+height: 50vmin;
+
+top: 50%;
+left: 50%;
+
+
+
+animation: react-rotate 8s linear infinite;
+
+}
+
+
+
+
+
+@keyframes react-rotate {
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
+
+
 
 #html-page div {
        
 }
 
-@keyframes html-icon-switcher {
-    
-    20% {
-        transform: translateY(-50%), rotate(0deg);
-        opacity: 1;
-    }
-    
-    25% {
-        content: url("2.png");
-        opacity: 0;
-        transform: translateY(-50%), rotate(-360deg);
-    }
 
-    30% {
-        transform: translateY(-50%), rotate(0deg);
-        opacity: 1;
-    }
-
-    70% {
-        transform: translateY(-50%), rotate(0deg);
-        opacity: 1;
-    }
-    
-    75% {
-        content: url("4.png");
-
-        opacity: 0;
-        transform: translateY(-50%), rotate(-360deg);
-    }
-
-    80% {
-        transform: translateY(-50%), rotate(0deg);
-        opacity: 1;
-    }
-
-}
 
 
 
 #python-page {
     background-image:
     linear-gradient(to bottom, rgba(23, 23, 23, 1) 0%, rgba(23, 23, 23, 0.5) 25%, rgba(23, 23, 23, 0.5) 75%, rgba(23, 23, 23, 1) 100%),
-    url("csharp screenshot.png");
+    url("python screenshot.png");
     background-size: cover;
     background-position: 50%;
     min-height: 100vh;
@@ -205,10 +306,10 @@
 
 #python-page img {
 
-    width: 50vmin;
-    height: 50vmin;
+    max-width: 50vmin;
+    max-height: 50vmin;
     bottom: 50%;
-    transform: translateY(-50%);
+    opacity: 0;
 }
 
 #python-page div {
@@ -318,6 +419,7 @@
     animation-fill-mode: forwards;
     opacity: 0;
     transform: rotate(360deg);
+
 
 }
 
@@ -465,13 +567,13 @@
     animation: background-tile 30s linear infinite;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content:center;
     height: 100vh;
     align-items: stretch;
     flex-wrap: wrap;
     align-content: stretch;
     font-weight: 100;
-    width: 100vw;
+    width: 100%;
 }
 
 #the-hook {
@@ -501,7 +603,7 @@
     flex-wrap: wrap;
     align-content: stretch;
     font-weight: 100;
-    width: 100vw;
+    width: 100%;
 }
 
 #short-about2 {
@@ -521,12 +623,13 @@
 
 .coding-text {
     align-self: center;
-    max-width: 100%;
+    max-width: 70vw;
     min-width: 50%;
     height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
 }
 
 .coding-text h1 {
@@ -559,13 +662,6 @@
     }
 }
 
-.icon-pic-new {
-    width: 80%;
-    left: 50%;
-    top: 50%;
-    border-radius: 50px;
-    animation: 4s ease-in-out iconslideshow;
-}
 
 body {
     margin: 0px;
@@ -578,16 +674,7 @@ input, button {
     background: none;
 }
 
-#contact-button {
-    background-color: #979797;
-    font-size: large;
-    font-family: sans-serif;
-}
 
-#contact-me:hover {
-    color: var(--highlight1);
-    font-weight: 900;
-}
 
 @keyframes background-tile {
     0% {

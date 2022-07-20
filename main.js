@@ -13,7 +13,7 @@ function transition_icons(ind)
     new_pic.src = ind + ".png";
     new_pic.classList.add("icon-pic-new");
     new_pic.type = "icon-pic-new";
-    if(ind >= 6)
+    if(ind >= 7)
     {
         ind = 0;
     }
@@ -123,6 +123,15 @@ function animate() {
 }
 
 animate();
+
+
+
+const map = document.querySelector('.map');
+const observer = new IntersectionObserver(entries => {
+  map.classList.toggle( 'map-animation', entries[0].isIntersecting );
+});
+
+observer.observe( map );
 
 
 

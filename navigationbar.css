@@ -57,10 +57,12 @@ nav a {
     color: var(--light);
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 100;
 }
 
 nav a:hover {
     color: var(--light);
+    font-weight: 900;
 }
 
 nav a::before {
